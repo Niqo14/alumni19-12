@@ -1,0 +1,905 @@
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: sans-serif !important;
+    background-color: red !important;
+}
+
+.bod-index{
+    background: #fff !important;
+}
+
+main{
+    margin-top: 30px !important;
+    background: rgb(255,222,222) !important;
+    background: #fff !important;
+}
+
+footer{
+        width: 100% !important;
+        height: auto !important;
+
+    }
+
+/* Barra de navegacion */
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.nav-menu {
+    background-color: black !important;
+}
+
+.line {
+    width: 80% !important;
+    margin: auto !important;
+}
+
+.logo a {
+    font-size: 1.8rem !important;
+    color: crimson !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 20px !important;
+    align-items: center !important;
+}
+
+.navbar .main-menu {
+    display: flex !important;
+}
+
+.main-menu li a {
+    display: inline-block !important;
+    padding: 15px 30px !important;
+    transition: 0.5s all ease !important;
+}
+
+li a:hover {
+    color: crimson !important;
+    background-color: rgba(174, 174, 174, 0.168) !important;
+}
+
+.menu-btn {
+    display: none !important;
+}
+
+.section {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+@media screen and (max-width: 768px) {
+    .main-menu {
+        position: absolute !important;
+        z-index: 200 !important;
+        top: 65px !important;
+        left: 0 !important;
+        width: 100% !important;
+        padding: 30px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        transform: translateX(-800px) !important;
+        transition: 0.5s all ease !important;
+        background-color: #111 !important;
+    }
+
+    .main-menu.show {
+        transform: translateX(0px) !important;
+        transition: 0.5s all ease !important;
+    }
+
+    .main-menu li a {
+        margin-bottom: 10px !important;
+        display: block !important;
+    }
+
+    .menu-btn {
+        display: block !important;
+        position: absolute !important;
+        color: white !important;
+        top: 10px !important;
+        right: 30px !important;
+        font-size: 2rem !important;
+    }
+}
+
+/* RESULTADOS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,700');
+.r18-container {
+  margin: 0 auto !important;
+  width: 100% !important;
+  background: #ac0909 !important;
+  display: flex !important;
+  flex-flow: row wrap !important;
+}
+
+.r18-container>* {
+  flex: 1 100% !important;
+  text-align: center !important;
+}
+
+.r18-items:nth-child(1) {
+  background: rgba(0, 255, 255, 0.05) !important;
+}
+
+.r18-items:nth-child(2) {
+  background: rgba(255, 0, 0, 0.05) !important;
+}
+
+.r18-items:nth-child(3) {
+  background: rgba(0, 255, 0, 0.05) !important;
+}
+
+@media all and (min-width: 900px) {
+  .r18-items {
+    flex: 1 auto !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .r18-items {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+.r18-columns {
+  display: inline-flex !important;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  padding-top: 5px !important;
+}
+
+.r18-separator {
+  border-top: 1px dotted rgba(255, 255, 255, 0.979) !important;
+  width: 100% !important;
+}
+
+.logo {
+    width: 20px;
+}
+
+.r18-name {
+  color: #FFFFFF;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  padding: 5px !important;
+  position: relative !important;
+  top: -6px !important;
+}
+
+.r18-team-l {
+  padding-right: 5px !important;
+}
+
+.r18-team-l::after {
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  font-weight: 300 !important;
+  content: ":" !important;
+  color: #ffffff !important;
+  font-size: 28px !important;
+  line-height: 0 !important;
+  top: -2px !important;
+  position: relative !important;
+  margin-left: 5px !important;
+}
+
+.r18-team-r {
+  padding-left: 2px !important;
+}
+
+.r18-team-r .flag-icon, .r18-team-l .flag-icon {
+  position: relative !important;
+  top: -6px !important;
+}
+
+.r18-score {
+  font-weight: 700 !important;
+  font-size: 17.5px !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #fafafa !important;
+  position: relative !important;
+  padding: 0 10px !important;
+  top: -5px !important;
+}
+
+.r18-time {
+  color: #FFFFFF !important;
+  font-family: 'Open Sans', sans-serif !important;
+  display: inline-flex !important;
+  margin-bottom: -5px !important;
+}
+
+.r18-hour {
+  font-weight: 100 !important;
+  font-size: 36px !important;
+}
+
+.r18-text::after {
+  content: "" !important;
+  position: absolute !important;
+  height: 18px !important;
+  border-left: 1px dotted rgb(255, 255, 255) !important;
+  top: 17px !important;
+  margin-left: -10px !important;
+}
+
+.r18-text {
+  display: inline-grid !important;
+  margin-left: 20px !important;
+  position: relative !important;
+  min-width: 48px !important;
+}
+
+.r18-text span:first-child {
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+  text-align: left !important;
+  position: relative !important;
+  top: 10px !important;
+}
+
+.r18-text span:last-child {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  position: absolute !important;
+  top: 25px !important;
+}
+
+
+/* SLIDER */
+.carousel-item{
+    height: 600px;
+    
+}
+.d-img{
+    width:100%;
+    height: 100%;
+  object-fit:cover;
+  
+}
+.hero{
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute; 
+    right: 15%;
+     /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Añadir para conseguir el fondo con opacidad */
+}
+
+/* NOTICIAS */
+.noticias{
+    margin-top: 50px !important;
+    
+}
+
+.col{
+    width: 100%;
+    padding: 0 15px 0  !important;
+}
+
+/* EQUIPO DE TRABAJO - PROFESORES */
+.wrapper{
+    background: #fff !important;
+    width: 580px !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4) !important;
+    margin: 0 auto !important;
+}
+.pf{
+    text-align: center !important;
+}
+hr{
+    width: 100px !important;
+    margin: 10px auto !important;
+}
+.members{
+    display: flex !important;
+}
+.team-mem{
+    margin: 8px !important;
+}
+.img-profes{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    margin: 10px !important;
+}
+h4,p{
+    text-align: center !important;
+    font-size: 12px !important;
+    margin: 7px !important;
+}
+
+/* FOOTER */
+.grid-container{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    background-color: white !important;
+    color: azure !important;
+}
+.grid-container div{
+background-color: red !important;
+margin: 10px !important;
+text-align: center !important;
+
+}
+
+
+.grid-container1{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    background-color: white !important;
+    color: azure !important;
+    height: 200px !important;
+    
+}
+.grid-container1 div{
+background-color: red !important;
+
+text-align: center !important;
+
+}
+
+@media(max-width:900px) {
+    footer{
+        display: grid !important;
+        grid-row: auto !important;
+    }
+    .grid-container{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        
+        background-color: white !important;
+        color: azure !important;
+        
+    }
+    .grid-container div{
+    text-align: center !important;
+    margin-bottom: 10px !important;
+    background-color: red !important;
+   
+
+    
+    }
+    .grid-container1{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        background-color: white !important;
+        color: azure !important;
+        position:relative !important;
+    }
+    .grid-container1 div{
+    text-align: center !important;
+    margin-bottom: 10px !important;
+    background-color: red !important;
+    }
+}
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100% !important;
+    background-color: #0a141d !important;
+}
+.pie-pagina .grupo-1{
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: auto !important;
+    display:grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap:50px !important;
+    padding: 45px 0px !important;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px !important;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff !important;
+    margin-bottom: 25px !important;
+    font-size: 20px !important;
+    
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef !important;
+    margin-bottom: 10px !important;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block !important;
+    text-decoration: none !important;
+    width: 45px !important;
+    height: 45px !important;
+    line-height: 45px !important;
+    color: #fff !important;
+    margin-right: 10px !important;
+    background-color: #0d2033 !important;
+    text-align: center !important;
+    transition: all 300ms ease !important;
+    
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua !important;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a !important;
+    padding: 15px 10px !important;
+    text-align: center !important;
+    color: #fff !important;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px !important;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90% !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap:30px !important;
+        padding: 35px 0px !important;
+    }
+}
+
+
+/* FÚTBOL */
+
+.cat-futbol{
+    max-width: 960px !important;
+    margin-inline: auto !important;
+    padding: 100px 15px !important;
+}
+
+.titulo{
+    margin-bottom: 50px !important;
+}
+
+.titulo span{
+    display: block !important;
+}
+
+.titulo .primary{
+    font-size: clamp(26px, 5vw, 52px) !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+}
+
+.titulo .secundary{
+    font-size: clamp(14px, 2.5vw, 16px) !important;
+    font-weight: 400 !important;
+    color: #fff !important;
+}
+
+.gallery-wrapper{
+    display: flex !important;
+}
+
+.gallery-item{
+    position: relative !important;
+    isolation: isolate !important;
+    display: flex !important;
+    flex: 1 !important;
+    height: 500px !important;
+    background-color: #000 !important;
+    padding: 25px !important;
+    opacity: 1 !important;
+    overflow: hidden !important;
+    transition: flex 0.5s, opacity 0.25s !important;
+}
+
+.gallery-item:hover{
+    opacity: 1 !important;
+    flex: 5 !important;
+}
+
+.gallery-item:not(:hover){
+    opacity: 0.75 !important;
+}
+
+.item-image{
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    z-index: -1 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.item-description{
+    align-self: flex-end !important;
+    text-transform: uppercase !important;
+    color: #fff !important;
+}
+
+.name{
+    font-size: 37px !important;
+    background: linear-gradient(90deg, #fc033d, #f00606) !important;
+    padding-inline: 10px !important;
+    transform: translateY(-10px) !important;
+}
+
+.role{
+    display: inline-block !important;
+    background: linear-gradient(90deg, #4136d9, #0086c7) !important;
+    padding: 10px !important;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2) !important;
+    transform: translateY(10px) !important;
+}
+
+.name, .role{
+    opacity: 0 !important;
+    transition: opacity 0.25s, transform 0.3s !important;
+    transition-delay: .35s !important;
+}
+
+.gallery-item:hover .name, .gallery-item:hover .role {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.gallery-item:not(:hover) .name, .gallery-item:not(:hover) .role {
+    transition-delay: 0s !important;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-wrapper {
+        flex-direction: column !important;
+        height: 100vh !important;
+    }
+
+    .gallery-item:hover{
+        flex-basis: 100% !important;
+    }
+}
+
+/* GALERIA FUTBOL */
+.img-futbol {
+    max-width: 100% !important;
+    height: auto !important;
+    vertical-align: middle !important;
+    display: inline-block !important;
+}
+.gallery-futbol {
+    display: grid !important;
+    grid-gap: 10px !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    grid-auto-rows: 200px !important;
+    grid-auto-flow: dense !important;
+}
+.gallery-futbol > div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.gallery-futbol > div > img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 5px !important;
+}
+.gallery-futbol .tall {
+    grid-row: span 2 !important;
+}
+
+/* COMISION DIRECTIVA */
+
+.com{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 25px;
+    text-align: center;
+    color: #fff;
+    
+    
+}
+
+.com-directiva{
+    text-align: center;
+    color: #fff;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+.com-dir, h3{ 
+    text-align: center;
+    color: black;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+
+/* HISTORIA */
+
+
+.img-header{
+    position: relative !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background:url(../img/Banner_futbol.png) !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.img-header .welcome{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0,0,0,0.6) !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+.img-header .welcome h1{
+    font-size: 50px !important;
+    color:#fff !important;
+    font-weight: 200 !important;
+}
+.img-header .welcome hr{
+    width: 400px !important;
+    height: 2px !important;
+    background: #fff !important;
+    border: none !important;
+    margin-top: 5px !important;
+}
+
+
+@media only screen and (max-width:773px ){
+    .img-header .welcome h1{font-size: 40px !important;} 
+    .img-header .welcome > button{width: 130px !important; font-size: 20px !important;} 
+}
+@media only screen and (max-width:590px){
+    .img-header .welcome h1{font-size: 30px !important;} 
+    .img-header .welcome hr{width: 100px !important;} 
+}
+
+
+/* HISTORIA */
+
+
+.img-header1{
+    position: relative !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background:url(../img/alumnisede.jpeg) !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.img-header1 .welcome{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0,0,0,0.6) !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+.img-header1 .welcome h1{
+    font-size: 50px !important;
+    color:#fff !important;
+    font-weight: 200 !important;
+}
+.img-header1 .welcome hr{
+    width: 400px !important;
+    height: 2px !important;
+    background: #fff !important;
+    border: none !important;
+    margin-top: 5px !important;
+}
+
+
+@media only screen and (max-width:773px ){
+    .img-header1 .welcome h1{font-size: 40px !important;} 
+    .img-header1 .welcome > button{width: 130px !important; font-size: 20px !important;} 
+}
+@media only screen and (max-width:590px){
+    .img-header1 .welcome h1{font-size: 30px !important;} 
+    .img-header1 .welcome hr{width: 100px !important;} 
+}
+
+
+/** HIStORIA **/
+.history{
+    width: 100% !important;
+    margin-top: 120px !important;
+}
+.history .info-container{
+    width: 80% !important;
+    margin:auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+.history .info-container h2{
+    font-size: 50px !important;
+    font-weight: 400 !important;
+    color: var(--black) !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+.history .info-container p{
+    text-align: center !important;
+    font-size: 17px !important;
+    color: var(--black) !important;
+    line-height: 35px !important;
+    margin:10px 0px !important;
+}
+.history .info-container .about-gallery{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 50px 0px !important;
+}
+.history .info-container .about-gallery img{
+    width: calc(33.333% - 10px) !important;
+    height: 300px !important;
+    margin: 10px 10px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+}
+.history .info-container .about-more{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+@media only screen and (max-width:773px){
+    .history .info-container .about-gallery{flex-direction: column !important;}
+    .history .info-container .about-gallery img{width: 100% !important;}
+}
+@media only screen and (max-width:590px){
+    .history .info-container h2{font-size: 30px !important;}
+    .history .info-container p{font-size: 15px !important;}
+}
+
+/* TABLA PRIMERA DIVISIÓN */
+
+.h1-tabla{
+    font-family:sans-serif !important;
+    width:400px !important;
+    margin:35px auto !important;
+    text-align:center !important;
+    color:rgb(214, 20, 20) !important;
+  }
+
+  .h2-fixture{
+    font-family:sans-serif !important;
+    width:400px !important;
+    margin:35px auto !important;
+    text-align:center !important;
+    color:rgb(214, 20, 20) !important;
+  }
+
+  table{
+    width:720px !important;
+    margin:0 auto !important;
+    color:white !important;
+    text-align:center !important;
+  }
+  tr{
+    cursor:pointer !important;
+  }
+  .destacado{
+    font-family:Arial !important;
+    font-weight:bold !important;
+    background-color:#0D6859 !important;
+  }
+  
+ 
+
+  .img-tabla{
+    width: 30px !important;
+  }
+
+  /* Impares */
+  table tr:nth-child(odd){
+    background-color: red !important;
+  }
+  
+  table tr:nth-child(odd):hover{
+    color:black !important;
+    background-color:white !important;
+  }
+  /* Pares */
+  table tr:nth-child(even){
+    background-color:#b10b0b !important;
+  }
+  
+  table tr:nth-child(even):hover{
+    color:black !important;
+    background-color: red !important;
+  }
+
+  .table-danger{
+    color: white !important;
+  }
+
+
+@media(max-width:900px){
+    .header{
+        background: red !important;
+        height: 80px !important;
+        display: flex !important;
+        width: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    .nav-menu{
+        display: block !important;
+        margin-right: 40px !important;
+        background-color: red !important;
+        min-width: 50px !important;
+
+     
+        list-style: none !important;
+    }
+    .lista{
+        background-color: red !important;
+        
+    }
+    .nav{
+        background-color: red !important;
+    }
+    .nav-menu{
+        visibility: hidden !important;
+        background-color: red !important;
+        width: 100% !important;
+       
+    }
+    li.lista{
+        background-color: red !important;
+        width: 100%;
+        
+    }   
+}
+
+/* FURMULARIO SOCIO */
+.img-form{
+    width: 95% !important;
+}
+
+.form-socio{
+    width: 100% !important;
+    background-color: #fff;
+    padding: 50px !important;
+}
