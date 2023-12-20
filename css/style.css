@@ -304,39 +304,7 @@ li a:hover {
     padding: 0 15px 0  !important;
 }
 
-/* EQUIPO DE TRABAJO - PROFESORES */
-.wrapper{
-    background: #fff !important;
-    width: 580px !important;
-    border-radius: 15px !important;
-    padding: 20px !important;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4) !important;
-    margin: 0 auto !important;
-}
-.pf{
-    text-align: center !important;
-}
-hr{
-    width: 100px !important;
-    margin: 10px auto !important;
-}
-.members{
-    display: flex !important;
-}
-.team-mem{
-    margin: 8px !important;
-}
-.img-profes{
-    width: 100px !important;
-    height: 100px !important;
-    border-radius: 50% !important;
-    margin: 10px !important;
-}
-h4,p{
-    text-align: center !important;
-    font-size: 12px !important;
-    margin: 7px !important;
-}
+
 
 /* FOOTER */
 .grid-container{
